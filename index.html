@@ -288,6 +288,31 @@
   .why-visual .row:last-child{border-bottom:none;}
   .why-visual .row b{color:var(--amber); font-family:'Space Grotesk',sans-serif;}
 
+  /* ---------- waste collection ---------- */
+  .waste{background:var(--soil); color:var(--cream);}
+  .waste .section-head .eyebrow{color:var(--amber);}
+  .waste .section-head h2{color:var(--cream);}
+  .waste .section-head p{color:#D8CFBB;}
+  .waste-layout{display:grid; grid-template-columns:1.1fr 0.9fr; gap:44px; align-items:stretch;}
+  .waste-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:16px;}
+  .waste-card{
+    background:rgba(246,241,230,0.06); border:1px solid rgba(246,241,230,0.15); border-radius:6px;
+    padding:22px;
+  }
+  .waste-card .ic{font-size:1.3rem; margin-bottom:10px;}
+  .waste-card h4{font-family:'Space Grotesk',sans-serif; font-size:0.98rem; color:var(--cream); margin-bottom:6px;}
+  .waste-card p{font-size:0.84rem; color:#B9AF9A;}
+  @media (max-width:860px){ .waste-layout{grid-template-columns:1fr;} .waste-grid{grid-template-columns:1fr 1fr;} }
+  .waste-cta-box{
+    background:var(--moss); border-radius:6px; padding:36px; display:flex; flex-direction:column; justify-content:center; gap:16px;
+  }
+  .waste-cta-box h3{color:var(--cream); font-size:1.25rem;}
+  .waste-cta-box p{font-size:0.92rem; color:#DCE6D6;}
+  .waste-cta-box .cta-row{margin-top:6px;}
+  .waste-cta-box .btn-primary{background:var(--amber); color:var(--soil);}
+  .waste-cta-box .btn-ghost{border-color:rgba(246,241,230,0.4); color:var(--cream);}
+  .waste-note{margin-top:16px; font-size:0.78rem; color:#B9AF9A; font-family:'JetBrains Mono',monospace;}
+
   /* ---------- contact / cta ---------- */
   .cta-final{
     background:
@@ -335,6 +360,7 @@
       <li><a href="#market">Market</a></li>
       <li><a href="#proof">Proof</a></li>
       <li><a href="#compare">Why EcoGro</a></li>
+      <li><a href="#waste-pickup">Got Waste?</a></li>
     </ul>
     <a class="nav-cta" href="#contact">Talk to Us</a>
   </div>
@@ -734,6 +760,46 @@
         <span class="pill">🌱 Locks Nutrients</span>
         <span class="pill">⚙ Machine-Ready</span>
         <span class="pill">🌿 Local & Sustainable</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="waste" id="waste-pickup">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Waste Collection</span>
+      <h2>Got agricultural waste? We'll haul it away — free.</h2>
+      <p>EcoGro's pellets are built almost entirely from waste streams that would otherwise cost you money to dispose of. If your farm, mill, or facility produces any of the materials below, contact us and we'll arrange free collection.</p>
+    </div>
+    <div class="waste-layout">
+      <div>
+        <div class="waste-grid">
+          <div class="waste-card">
+            <div class="ic">🔥</div>
+            <h4>Fly Ash</h4>
+            <p>From boilers, husk-fired dryers, or biomass power operations.</p>
+          </div>
+          <div class="waste-card">
+            <div class="ic">🪵</div>
+            <h4>Biochar & Char Residues</h4>
+            <p>Rice hull char, wood char, or other carbonized leftovers.</p>
+          </div>
+          <div class="waste-card">
+            <div class="ic">🌽</div>
+            <h4>Organic Crop Residues</h4>
+            <p>Corn cobs and husks, bagasse, rice straw, and similar field or mill waste.</p>
+          </div>
+        </div>
+        <p class="waste-note">No minimum volume required — we collect from single farms, mills, and cooperatives alike.</p>
+      </div>
+      <div class="waste-cta-box">
+        <h3>Request a Free Pickup</h3>
+        <p>Tell us what you have and where it's located — we'll schedule a collection and haul it off your property at no cost.</p>
+        <div class="cta-row">
+          <a class="btn btn-primary" href="mailto:hello@ecogro.com?subject=Free%20Waste%20Pickup%20Request&body=Waste%20type(s)%3A%0ALocation%3A%0AEstimated%20quantity%3A%0A">Request Pickup</a>
+          <a class="btn btn-ghost" href="#contact">Ask a Question</a>
+        </div>
       </div>
     </div>
   </div>
